@@ -115,6 +115,10 @@ a {
   flex-wrap: wrap;
   column-gap: 20px;
 }
+.btn1{
+  margin-right: 100px;
+}
+
 .btn1 button {
   font-size: 12px;
   padding: 0.5em 2em;
@@ -123,7 +127,6 @@ a {
   border: 2px solid #000000;
   background: white;
   border-radius: 0.75em;
-  margin-left: 70px;
  }
  
  .btn1:hover {
@@ -145,20 +148,68 @@ a {
   text-align: center;
   background-color: rgb(126, 203, 247);
   color: white;
-  font-weight: bold;
+  min-width: 100px;
+}
+
+
+.trn{
+  margin-top: 10px;
+  padding: 10px 110px 10px 110px;
+  display: flex;
+  justify-content: center;
+}
+.tds{
+  width: 70%;
+  border: 3px solid black;
+  height: 150px;
+  border-radius: 15px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/736x/dd/a9/a8/dda9a8c4c33b4223ae431a0f1e119f31.jpg");
+  box-shadow: 10px 10px;
 
 }
+.tran {
+  color: #000000;
+}
+
+
+
+
 /* responsive */
 @media screen and (max-width: 670px) {
  .categories{
   display: none;
  }
+
+ .trn{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding: 4px 25px 4px 25px;
+  display: flex;
+  justify-content: center;  
+
+
+}
+.tds{
+  width: 100%;
+}
+
+ .allcate{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn1{
+  margin-right: 50px;
+}
  .dropdown{
   display: block;
  }
  /* Dropdown Button */
 .dropbtn {
-  background-color: #3498DB;
+  background-color: rgb(126, 203, 247);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -186,7 +237,6 @@ a {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -209,6 +259,18 @@ a {
   }
 }
 @media screen and (max-width: 950px) {
+
+
+  .trn{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 4px 25px 4px 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .tds{
+    width: 90%;
+  }
   .nav {
     padding: 15px 50px;
   }
@@ -218,6 +280,8 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
+
+  
   .nav .navOpenBtn,
   .nav .navCloseBtn {
     display: block;
@@ -280,7 +344,10 @@ a {
   padding: 50px 0;
 }
 .mads{
-  background-image: linear-gradient(rgba(255, 4, 4, 0.79), rgb(228, 123, 19));
+  background-color: black;
+  color:white ;
+  font-size: larger;
+  opacity: .8;
 }
 
 .allbody {
@@ -376,7 +443,6 @@ a {
 
 
 
-
 .reco{
 
   font-size: larger;
@@ -390,9 +456,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  row-gap: 20px;
+  row-gap: 100px;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: 40px;
   margin-top: 30px;
 }
 
@@ -403,29 +469,29 @@ a {
   height: 400px;
   box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: all 300ms;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: all 700ms;
   display: flex;
   flex-direction: column;
   background: #fff;
-  padding: 0.5em 0.5em 0.5em 0.5em;
 
 }
 
-
+.des{
+padding: 10px  10px 10px 10px;
+}
 
 .card1 .title1 {
-
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
   left: 0.625em;
   bottom: 1.875em;
-  font-weight: 600;
   margin-top: 5px;
 }
+.card1 .price{
+  font-weight: 600;
 
+  font-size: larger;
+}
 
 
 .card1 :hover {
