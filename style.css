@@ -537,7 +537,9 @@ padding: 10px  10px 10px 10px;
 @media screen and (max-width: 500px) {
   .allbody {
     padding: 10px;
-  
+  }
+    .wrapper{
+   max-width: 60%;
   }
 }
 
