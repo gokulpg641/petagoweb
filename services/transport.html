@@ -62,31 +62,26 @@
     <!-----  INFO-------->
     <div id="info" class="info">
    
-        <header>Details</header>
-          <div class="input-box">
-            <label>Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter full name" required />
-          </div>
-  
-         
-          <div class="input-box address">
-            <label>Address</label>
-            <input type="text" name="add1" id="add1" placeholder="Enter street address" required />
-            <input type="text" name="add2"  placeholder="Enter street address line 2" required />
+        <header>Details</header> 
+          <div class="input-box ">
+             <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Pet</option>
+                <option>Cattle</option>
+              </select>
+            </div>
+            <input type="text" name="Category" id="Category" placeholder="Category" required />
+            <input type="text" name="Breed"  placeholder="Breed" />
             <div class="column">
-              <div class="select-box">
-                <select>
-                  <option hidden>Country</option>
-                  <option>America</option>
-                  <option>India</option>
-                  
-                </select>
-              </div>
-              <input type="text" name="city" id="city" placeholder="Enter your city" required />
+
+              <input type="text" name="weight" id="weight" placeholder="weight (in kg)" required />
             </div>
             <div class="column">
-              <input type="text" name="region" id="region" placeholder="Enter your region" required />
-              <input type="number" name="pincode" id="pincode" placeholder="Enter postal code" required />
+              <input type="text" name="height" id="height" placeholder="height (in cm)" required />
+               <input type="number" name="age" id="age" placeholder="age" required />
+
+              <input type="number" name="qty" id="qty" placeholder="Quantity" required />
             </div>
           </div>
           <div class="nextbtn">
