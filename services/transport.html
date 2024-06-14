@@ -60,11 +60,10 @@
   <section class="container">
 
     <!-----  INFO-------->
-<div id="info" class="info" style="margin-top: 20px;">
+    <div id="info1" class="info1">
    
-        <header>Details</header> 
-          <div class="input-box ">
-             <div class="column">
+        <header>Details</header>
+        <div class="input-box">
             <div class="select-box">
               <select>
                 <option hidden>Pet</option>
@@ -75,17 +74,13 @@
             </div>
             <input type="text" name="Category" id="Category" placeholder="Category" required />
             <input type="text" name="Breed"  placeholder="Breed" required />
-            <div class="column">
 
               <input type="text" name="weight" id="weight" placeholder="weight (in kg)" required />
-            </div>
-            <div class="column">
               <input type="text" name="height" id="height" placeholder="height (in cm)" required />
                <input type="number" name="age" id="age" placeholder="age" required />
 
               <input type="number" name="qty" id="qty" placeholder="Quantity" required />
-            </div>
-          </div>
+        </div>
           <div class="nextbtn">
           <button name="next" onclick="next1()">next</button>
         </div>
@@ -96,33 +91,31 @@
 
       <div id="destination" class="destination">
    
-      <header>Destination</header>
-   <div class="input-box">
-              <label>Full Name</label>
-              <input type="text" name="name" placeholder="Enter full name" required />
-            </div>
-    
-          
-            <div class="column">
-              <div class="input-box">
-                <label>Phone Number</label>
-                <input type="number" name="phno" placeholder="Enter phone number" required />
-              </div>
-              
-            </div>
-           
-            <div class="input-box address">
-              <label>Address</label>
-              <input type="text" name="add1" placeholder="Enter street address" required />
-              <input type="text" name="add2" placeholder="Enter street address line 2" required />
-              <div class="column">
+      <header>Details</header>
+        <div class="input-box">
+          <label>Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" name="add1" id="add1" placeholder="Enter street address" required />
+          <input type="text" name="add2"  placeholder="Enter street address line 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>India</option>
                 
-                <input type="text" name="city" placeholder="Enter your city" required />
-              </div>
-              <div class="column">
-                <input type="text" name="region" placeholder="Enter your region" required />
-                <input type="number" name="pincode" placeholder="Enter postal code" required />
-              </div>
+              </select>
+            </div>
+            <input type="text" name="city" id="city" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" name="region" id="region" placeholder="Enter your region" required />
+            <input type="number" name="pincode" id="pincode" placeholder="Enter postal code" required />
+          </div>
         </div>
         <div class="nextbtn">
         <button name="next" onclick="nextpage()">next</button>
