@@ -60,7 +60,7 @@
   <section class="container">
 
     <!-----  INFO-------->
-    <div id="info" class="info">
+    <div id="info1" class="info1">
    
         <header>Destination</header>
           <div class="input-box">
@@ -206,12 +206,12 @@
   <script>
 
 function next1(){
-  let inputs = document.querySelectorAll('.info input');
+  let inputs = document.querySelectorAll('.info1 input');
     let allFilled = Array.from(inputs).every(input => input.value !== '');
 
 
     if(allFilled){
-        document.getElementById('info').style.display="none";
+        document.getElementById('info1').style.display="none";
       document.getElementById('destination').style.display="block";
       document.getElementById('pickup').style.display="none";
     }
@@ -222,18 +222,18 @@ function nextpage(){
 
 
     if(allFilled){
-        document.getElementById('info').style.display="none";
+        document.getElementById('info1').style.display="none";
       document.getElementById('destination').style.display="none";
       document.getElementById('pickup').style.display="block";
     }
 }
 function prepage1(){
-    document.getElementById('info').style.display="block";
+    document.getElementById('info1').style.display="block";
       document.getElementById('destination').style.display="none";
       document.getElementById('pickup').style.display="none";
     }
 function prepage2(){
-    document.getElementById('info').style.display="none";
+    document.getElementById('info1').style.display="none";
       document.getElementById('destination').style.display="block";
       document.getElementById('pickup').style.display="none";
     }
