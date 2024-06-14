@@ -56,29 +56,69 @@
             <img src="image1.png">
         </div> -->
 
-<!--destination-->
 <form class="form first"  method="POST" action="hom.php">
   <section class="container">
+
+    <!-----  INFO-------->
+    <div id="info" class="info">
+   
+        <header>Destination</header>
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter full name" required />
+          </div>
+  
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="text" name="email" id="email" placeholder="Enter email address" required />
+          </div>
+  
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="number" name="phno" id="phno" placeholder="Enter phone number" required />
+            </div>
+            
+          </div>
+         
+          <div class="input-box address">
+            <label>Address</label>
+            <input type="text" name="add1" id="add1" placeholder="Enter street address" required />
+            <input type="text" name="add2"  placeholder="Enter street address line 2" required />
+            <div class="column">
+              <div class="select-box">
+                <select>
+                  <option hidden>Country</option>
+                  <option>America</option>
+                  <option>India</option>
+                  
+                </select>
+              </div>
+              <input type="text" name="city" id="city" placeholder="Enter your city" required />
+            </div>
+            <div class="column">
+              <input type="text" name="region" id="region" placeholder="Enter your region" required />
+              <input type="number" name="pincode" id="pincode" placeholder="Enter postal code" required />
+            </div>
+          </div>
+          <div class="nextbtn">
+          <button name="next" onclick="nextpage()">next</button>
+        </div>
+        
+    </div>  
+
+<!--destination-->
+
       <div id="destination" class="destination">
    
-      <header>Destination</header>
+      <header>Details</header>
         <div class="input-box">
-          <label>Full Name</label>
+          <label>Name</label>
           <input type="text" name="name" id="name" placeholder="Enter full name" required />
         </div>
 
-        <div class="input-box">
-          <label>Email Address</label>
-          <input type="text" name="email" id="email" placeholder="Enter email address" required />
-        </div>
 
-        <div class="column">
-          <div class="input-box">
-            <label>Phone Number</label>
-            <input type="number" name="phno" id="phno" placeholder="Enter phone number" required />
-          </div>
-          
-        </div>
+
        
         <div class="input-box address">
           <label>Address</label>
@@ -102,6 +142,9 @@
         </div>
         <div class="nextbtn">
         <button name="next" onclick="nextpage()">next</button>
+      </div>
+      <div class="backbtn">
+        <button name="back"  onclick="prepage1()">back</button>
       </div>
       
   </div>  
@@ -147,7 +190,7 @@
               <button name="submit">submit</button>
             </div>
             <div class="backbtn">
-              <button name="back"  onclick="prepage()">back</button>
+              <button name="back"  onclick="prepage2()">back</button>
             </div>
          
       </div>  
@@ -161,18 +204,36 @@
 
   </div>
   <script>
+
+function next(){
+  let inputs = document.querySelectorAll('.info input');
+    let allFilled = Array.from(inputs).every(input => input.value !== '');
+
+
+    if(allFilled){
+        document.getElementById('info').style.display="none";
+      document.getElementById('destination').style.display="block";
+      document.getElementById('pickup').style.display="none";
+    }
+}
 function nextpage(){
   let inputs = document.querySelectorAll('.destination input');
     let allFilled = Array.from(inputs).every(input => input.value !== '');
 
 
     if(allFilled){
+        document.getElementById('info').style.display="none";
       document.getElementById('destination').style.display="none";
       document.getElementById('pickup').style.display="block";
     }
 }
-function prepage(){
-
+function prepage1(){
+    document.getElementById('info').style.display="block";
+      document.getElementById('destination').style.display="none";
+      document.getElementById('pickup').style.display="none";
+    }
+function prepage2(){
+    document.getElementById('info').style.display="none";
       document.getElementById('destination').style.display="block";
       document.getElementById('pickup').style.display="none";
     }
