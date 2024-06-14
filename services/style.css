@@ -187,7 +187,10 @@ a {
   background: radial-gradient(#d8e0f1,#ecf0f8);
   margin-top: 60px;
 }
-
+.info{
+  margin-top: 60px;
+  display: none;
+}
 .pickup{
   margin-top: 60px;
   display: none;
