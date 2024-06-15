@@ -250,21 +250,7 @@ main.table {
 
 
 
-.btn button {
- 
-  background: black;
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: .5s;
-}
-.btn button:hover {
-  background-color: rgba(27, 27, 27, 0.85);
-  cursor: pointer;
-  transform: scale(1.03);
-}
+
 
 .select1 select{
  
