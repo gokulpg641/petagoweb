@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--<title>Registration Form in HTML CSS</title>-->
     <!---Custom CSS File--->
-    <link rel="stylesheet" href="user_table.css" />
+    <link rel="stylesheet" href="style.css" />
       <!-- Unicons CSS -->
       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
       <script src="hscript.js" defer></script>
@@ -47,20 +47,20 @@
         <tr>
 	<td>1</td>
         <td>2</td>
-        <td>              <button type="button" name="submitpage" class="btn">edit</button>
+        <td>              <button type="button" name="submitpage" class="btn">View</button>
         </td>
 
 </tr>
 <tr>
 	<td>1</td>
         <td>2</td>
-        <td>              <button type="button" name="submitpage" class="btn">edit</button>
+        <td>              <button type="button" name="submitpage" class="btn">View</button>
         </td>
 
 </tr>  <tr>
 	<td>1</td>
         <td>2</td>
-        <td>    <button type="button" name="submitpage" class="btn">edit</button>
+        <td>    <button type="button" name="submitpage" class="btn">View</button>
         </td>
 </tr>
 	</tbody>
@@ -71,33 +71,31 @@
         </section>
     </main>
 
+<script>
 
-    <script>
+const navi = document.querySelector(".navi"),
+  searchIcon = document.querySelector("#searchIcon"),
+  naviOpenBtn = document.querySelector(".naviOpenBtn"),
+  naviCloseBtn = document.querySelector(".naviCloseBtn");
 
-const search = document.querySelector('.input-group input'),
-    table_rows = document.querySelectorAll('tbody tr'),
-    table_headings = document.querySelectorAll('thead th');
+searchIcon.addEventListener("click", () => {
+  navi.classList.toggle("openSearch");
+  navi.classList.remove("openNavi");
+  if (navi.classList.contains("openSearch")) {
+    return searchIcon.classList.replace("uil-search", "uil-times");
+  }
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
 
-// 1. Searching for specific data of HTML table
-search.addEventListener('input', searchTable);
-
-function searchTable() {
-    table_rows.forEach((row, i) => {
-        let table_data = row.textContent.toLowerCase(),
-            search_data = search.value.toLowerCase();
-
-        row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
-        row.style.setProperty('--delay', i / 25 + 's');
-    })
-
-    document.querySelectorAll('tbody tr:not(.hide)').forEach((visible_row, i) => {
-        visible_row.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
-    });
-}
+naviOpenBtn.addEventListener("click", () => {
+  navi.classList.add("openNavi");
+  navi.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+naviCloseBtn.addEventListener("click", () => {
+  navi.classList.remove("openNavi");
+});
 </script>
-
-
-  
 
   </body>
 </html>
