@@ -61,7 +61,7 @@
 <!--destination-->
 <form class="form first"  method="POST" action="hom.php">
   <section class="container">
-      <div id="destination" class="destination">
+      <div id="destination2" class="destination2">
    
       <header>SELL</header>
 
@@ -105,7 +105,7 @@
       
   </div>  
       <!--Pickup-->
-      <div class="pickup" id="pickup">
+      <div class="pickup2" id="pickup2">
           <header>SELL</header>
 
           
@@ -131,19 +131,19 @@
   </div>
   <script>
 function nextpage(){
-  let inputs = document.querySelectorAll('.destination input');
+  let inputs = document.querySelectorAll('.destination2 input');
     let allFilled = Array.from(inputs).every(input => input.value !== '');
 
 
     if(!allFilled){
-      document.getElementById('destination').style.display="none";
-      document.getElementById('pickup').style.display="block";
+      document.getElementById('destination2').style.display="none";
+      document.getElementById('pickup2').style.display="block";
     }
 }
 function prepage(){
 
-      document.getElementById('destination').style.display="block";
-      document.getElementById('pickup').style.display="none";
+      document.getElementById('destination2').style.display="block";
+      document.getElementById('pickup2').style.display="none";
     }
 
 
