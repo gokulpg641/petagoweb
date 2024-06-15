@@ -107,16 +107,8 @@ a {
     right: 150px;
   }
 }
-@media screen and (max-width: 950px) {
-  .nav {
-    padding: 15px 50px;
-  }
-  .nav .search-box {
-    right: 100px;
-    max-width: 400px;
-  }
-}
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 968px) {
   .nav .navOpenBtn,
   .nav .navCloseBtn {
     display: block;
