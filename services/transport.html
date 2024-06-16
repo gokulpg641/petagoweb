@@ -263,7 +263,7 @@
 
 function next1(){
   let inputs = document.querySelectorAll('.info1 input');
-    let allFilled = Array.from(inputs).every(input => input.value == !'');
+    let allFilled = Array.from(inputs).every(input => input.value !== '');
 
 
     if(allFilled){
@@ -274,7 +274,7 @@ function next1(){
 }
 function nextpage(){
   let inputs = document.querySelectorAll('.pickup input');
-    let allFilled = Array.from(inputs).every(input => input.value == !'');
+    let allFilled = Array.from(inputs).every(input => input.value !== '');
 
 
     if(allFilled){
