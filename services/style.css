@@ -179,12 +179,12 @@ a {
   background: radial-gradient(#d8e0f1,#ecf0f8);
   margin-top: 60px;
 }
-.destination{
+.pickup{
   margin-top: 60px;
   display: none;
 }
 
-.pickup{
+.destination{
   margin-top: 60px;
   display: none;
 }
@@ -298,10 +298,10 @@ a {
     display: none;
   }
   .destination{
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .pickup{
-    margin-top: 60px;
+    margin-top: 50px;
   }
   .form :where(.gender-option, .gender) {
     row-gap: 15px;
@@ -366,4 +366,3 @@ ul{
   margin: 20px 0;
   width: 100%;
 }
-
